@@ -19,6 +19,7 @@ for (let emoji of emojis) {
 }
 
 function filterDuplicates() {
+    uniqueEmojisP.textContent = '';
     // 1. Filter out all duplicate emojis, leaving only one of each emoji.
     const result = new Set(emojis)
     // 2. Render the unique emojis in uniqueEmojisP.
@@ -27,5 +28,3 @@ function filterDuplicates() {
     }
     // Just for fun: Replace them with your favourite emojis! 😃 
 }
-
-filterDuplicates()
